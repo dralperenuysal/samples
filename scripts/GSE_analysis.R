@@ -29,7 +29,7 @@ sample_info <- sample_info %>%
   mutate(title = gsub("RNA-seq_", "", title))
 
 # Read the counts if already downladed
-counts <- read.delim(file = "resource/rnaseq/GSE153380/GSE153380_Raw_counts_in_57992_quantified_genes.tsv")
+counts <- read.delim(file = "")
 rownames(counts) <- counts$id # Id column should be rownames for DEG analysis
 counts <- counts %>% select(-id)
 
